@@ -37,10 +37,12 @@ class MainActivity : AppCompatActivity() {
             placeModel()
         }
 
+        // Video Node Action
         videoNode = VideoNode(sceneView.engine, scaleToUnits = 0.7f, centerOrigin = Position(y=-4f), glbFileLocation = "models/plane.glb", player = mediaPlayer, onLoaded = {_,_ ->
             mediaPlayer.start()
         })
 
+        // ArModelNode Work
         modelNode = ArModelNode(sceneView.engine, PlacementMode.INSTANT).apply {
             loadModelGlbAsync(
                 glbFileLocation = "models/sofa.glb",
@@ -63,6 +65,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    // Method for adding model
     private fun placeModel(){
         modelNode.anchor()
 
