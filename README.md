@@ -1,4 +1,5 @@
 # arSampleApp
 
 Augmented Reality android app to visualize furniture.
-with ViedoNode in AR Scene
+
+With ViedoNode in AR Scene
